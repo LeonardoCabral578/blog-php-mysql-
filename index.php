@@ -21,7 +21,7 @@
 
         <!-- MENÚ -->
         <!------------------------------------------------------------------------------------------->
-        <nav id="nav">
+        <nav id="menu">
             <ul>
                 <li>
                     <a href="index.php">Inicio</a>
@@ -46,6 +46,8 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="clearfix"></div>
     </header>
 
     <!-- BARRA LATERAL -->
@@ -85,49 +87,79 @@
                 </form>
             </div>
         </aside>
-    </div>
 
 
-    <!-- CAJA PRINCIPAL -->
-    <!------------------------------------------------------------------------------------------->
-    <div id="principal">
-        <h1>Últimas entradas</h1>
-        <article class="entrada">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-        </article>
 
-        <article class="entrada">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-        </article>
+        <!-- CAJA PRINCIPAL -->
+        <!------------------------------------------------------------------------------------------->
+        <div id="principal">
+            
+            <h1>Últimas entradas</h1>
 
-        <article class="entrada">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-        </article>
+            <article class="entrada">
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </a>
+            </article>
 
-        <article class="entrada">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
-            </p>
-        </article>
-    </div>
+            <article class="entrada">
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </a>
+            </article>
+
+            <article class="entrada">
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </a>
+            </article>
+
+            <article class="entrada">
+                <a href="">
+                    <h2>Título de mi entrada</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </a>
+            </article>
+
+            <div id="ver-todas">
+                <a href="">Ver todas las entradas</a>
+            </div>
+
+        </div> <!-- Fin principal -->
+
+        <div class="clearfix"></div>
+    </div> <!-- Fin contenedor -->
 
 
     <!-- PIE DE PÁGINA -->

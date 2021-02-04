@@ -18,12 +18,21 @@
     </div>
 
     <div id="register" class="bloque">
-        <?php if(isset($_SESSION['errores'])) {
-            var_dump($_SESSION['errores']);
-        }
-        ?>
 
         <h3>Regístrate</h3>
+        <!-- Mostrar errores -->
+        <?php
+            if (isset($_SESSION['completado'])) {
+                echo "<div class='alerta alerta-exito'>".
+                $_SESSION['completado'].
+                "<div/>";
+            } elseif(isset($_SESSION['errores']['general'])) {
+                echo "<div class='alerta alerta-error'>".
+                $_SESSION['errores']['general'].
+                "<div/>";
+            }
+        ?>
+
         <form action="registro.php" method="POST">
 
             <label for="nombre">Nombre</label>

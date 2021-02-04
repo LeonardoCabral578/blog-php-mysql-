@@ -21,17 +21,17 @@
 
         <h3>Regístrate</h3>
         <!-- Mostrar errores -->
-        <?php
-            if (isset($_SESSION['completado'])) {
-                echo "<div class='alerta alerta-exito'>".
-                $_SESSION['completado'].
-                "<div/>";
-            } elseif(isset($_SESSION['errores']['general'])) {
-                echo "<div class='alerta alerta-error'>".
-                $_SESSION['errores']['general'].
-                "<div/>";
-            }
-        ?>
+
+        <?php if (isset($_SESSION['completado'])) : ?>
+            <div class="alerta alerta-exito">
+                <?= $_SESSION['completado'] ?>
+            </div>
+        <?php elseif (isset($_SESSION['errores']['general'])) : ?>
+            <div class="alerta alerta-error">
+                <?= $_SESSION['errores']['general'] ?>
+            </div>
+
+        <?php endif; ?>
 
         <form action="registro.php" method="POST">
 

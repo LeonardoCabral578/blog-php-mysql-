@@ -54,7 +54,7 @@ body{
 
 
 /* LOGOTIPO
----------------------------------------------------*/
+#---------------------------------------------------*/
 #logo{
     float: left;
     width: 540px;
@@ -147,26 +147,19 @@ body{
     margin-bottom: 15px;
 }
 
-label,
-input[type="text"],
-input[type="email"],
-input[type="password"]{
+label, input[type="text"], input[type="email"], input[type="password"]{
     display: block;
     width: 95%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"]{
+input[type="text"], input[type="email"], input[type="password"]{
     padding: 5px;
     margin-bottom: 0px;
 }
 
-input[type="button"],
-input[type="submit"],
-.boton{
+input[type="button"], input[type="submit"], .boton{
     margin-top: 2px;
     margin-bottom: 5px;
     display: block;

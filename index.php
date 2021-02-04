@@ -12,61 +12,25 @@
 
     <h1>Últimas entradas</h1>
 
-    <article class="entrada">
-        <a href="">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea commodo consequat.
-            </p>
-        </a>
-    </article>
-
-    <article class="entrada">
-        <a href="">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea commodo consequat.
-            </p>
-        </a>
-    </article>
-
-    <article class="entrada">
-        <a href="">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea commodo consequat.
-            </p>
-        </a>
-    </article>
-
-    <article class="entrada">
-        <a href="">
-            <h2>Título de mi entrada</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                labore
-                et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip
-                ex ea commodo consequat.
-            </p>
-        </a>
-    </article>
+    <!-- BUCLE ENTRADAS -->
+    <!--------------------------------------------------->
+    <?php 
+        $entradas = conseguirUltimasEntradas($db);
+        if(!empty($entradas)):
+            while($entrada = mysqli_fetch_assoc($entradas)):
+    ?>
+        <article class="entrada">
+            <a href="">
+                <h2><?=$entrada['titulo']?></h2>
+                <p>
+                    <?=substr($entrada['descripcion'], 0, 180)." ..."?>
+                </p>
+            </a>
+        </article>
+    <?php
+        endwhile;
+        endif;
+    ?>
 
     <div id="ver-todas">
         <a href="">Ver todas las entradas</a>

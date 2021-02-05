@@ -3,6 +3,7 @@ if(isset($_POST)) {
     // Conexión a la BD.
     require_once 'includes/conexion.php';
 
+    // Datos
     $nombre = isset($_POST['nombre']) ? mysqli_real_escape_string($db, $_POST['nombre']) : false; 
 
     // Array de errores

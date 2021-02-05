@@ -16,7 +16,7 @@
     <br>
 
     <form action="guardar-categoria.php" method="POST">
-        <label for="nombre">Nombre de la categoría</label>
+        <label for="nombre">Nombre de la categoría:</label>
         <input type="text" name="nombre">
 
         <input type="submit" value="guardar">

@@ -13,7 +13,7 @@
     <!-- BUCLE ENTRADAS -->
     <!--------------------------------------------------->
     <?php 
-        $entradas = conseguirEntradas($db, true, null);
+        $entradas = conseguirEntradas($db, true, null, null);
         if(!empty($entradas)):
             while($entrada = mysqli_fetch_assoc($entradas)):
     ?>

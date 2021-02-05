@@ -24,10 +24,19 @@
     </a>
     <br>
     
-    <h4><?=$entrada_actual['fecha']?></h4>
+    <h4><?=$entrada_actual['fecha']?> | <?=$entrada_actual['usuario']?></h4>
     <p>
         <?=$entrada_actual['descripcion']?>
     </p>
+
+    <?php if(isset($_SESSION['usuario']) && $_SESSION['usuario']['id'] = $entrada_actual['usuario_id']) : ?>
+        <br>
+
+        <!-- Botones -->
+        <a href="editar-entrada.php?id=<?=$entrada_actual['id']?>" class="boton boton-verde">Editar entrada</a>
+        <a href="borrar-entrada.php?id=<?=$entrada_actual['id']?>" class="boton">Eliminar categoría</a>
+
+    <?php endif; ?>
     
 </div> <!-- Fin principal -->
 

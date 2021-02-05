@@ -66,12 +66,16 @@ function conseguirCategoria($conexion, $id){
 
 # ENTRADAS
 #-------------------------------------------------------------------------------------------#
-function conseguirEntradas($conexion, $limit = false, $categoria = null){
+function conseguirEntradas($conexion, $limit = false, $categoria = null, $busqueda = null){
     $sql =  "SELECT e.*, c.nombre AS 'categoria' FROM entradas e ".
             "INNER JOIN categorias c ON e.categoria_id = c.id ";
 
         if(!empty($categoria)){
             $sql .= "WHERE e.categoria_id = $categoria ";
+        }
+
+        if(!empty($busqueda)){
+            $sql .= "WHERE e.titulo LIKE '%$busqueda%' ";
         }
 
         $sql .= "ORDER BY e.id DESC ";
@@ -91,8 +95,9 @@ function conseguirEntradas($conexion, $limit = false, $categoria = null){
 }
 
 function conseguirEntrada($conexion, $id){
-    $sql = "SELECT e.*, c.nombre AS 'categoria' FROM entradas e ".
+    $sql = "SELECT e.*, c.nombre AS 'categoria', CONCAT(u.nombre, ' ', u.apellidos) AS 'usuario' FROM entradas e ".
             "INNER JOIN categorias c ON e.categoria_id = c.id ".
+            "INNER JOIN usuarios u ON e.usuario_id = u.id ".
             "WHERE e.id = $id;";
     $entrada = mysqli_query($conexion, $sql);
 

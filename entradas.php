@@ -8,12 +8,12 @@
 <!------------------------------------------------------------------------------------------->
 <div id="principal">
 
-    <h1>Últimas entradas</h1>
+    <h1>Todas las entradas</h1>
 
     <!-- BUCLE ENTRADAS -->
     <!--------------------------------------------------->
     <?php 
-        $entradas = conseguirEntradas($db, true, null);
+        $entradas = conseguirEntradas($db, false);
         if(!empty($entradas)):
             while($entrada = mysqli_fetch_assoc($entradas)):
     ?>
@@ -30,10 +30,6 @@
         endwhile;
         endif;
     ?>
-
-    <div id="ver-todas">
-        <a href="entradas.php">Ver todas las entradas</a>
-    </div>
 
 </div> <!-- Fin principal -->
 

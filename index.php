@@ -1,10 +1,9 @@
-<!-- HEAD Y CABECERA -->
+<!-- REDIRECCION - HEAD/CABECERA - LATERAL -->
 <!------------------------------------------------------------------------------------------->
+<?php require_once 'includes/redireccion.php'; ?>
 <?php require_once 'includes/cabecera.php'; ?>
-
-<!-- BARRA LATERAL -->
-<!------------------------------------------------------------------------------------------->
 <?php require_once 'includes/lateral.php'; ?>
+
 
 <!-- CAJA PRINCIPAL -->
 <!------------------------------------------------------------------------------------------->

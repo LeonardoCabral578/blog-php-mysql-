@@ -1,7 +1,5 @@
 <?php
 
-
-
 if (isset($_POST)) {
 
 # CONEXIÓN Y SESIÓN
@@ -19,8 +17,7 @@ if (isset($_POST)) {
     $email = isset($_POST['email']) ? mysqli_real_escape_string($db, trim($_POST['email'])) : false;
     $password = isset($_POST['password']) ? mysqli_real_escape_string($db, $_POST['password']) : false;
 
-    # ARRAY DE ERRORES
-    #-------------------------------------------------------------------------------------------#
+    // Array de errores
     $errores = array();
 
 # VALIDAR DATOS
@@ -91,4 +88,5 @@ if (isset($_POST)) {
 
 }
 
+// Redirección
 header('Location: index.php');

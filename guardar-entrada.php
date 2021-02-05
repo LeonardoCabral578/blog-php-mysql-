@@ -34,10 +34,15 @@ if(isset($_POST)) {
     if(count($errores) == 0){
         $sql = "INSERT INTO entradas VALUES(null, $usuario, $categoria, '$titulo', '$descripcion', CURDATE());";
         $guardar = mysqli_query($db, $sql);
+
+        //Redirección bien
+        header('Location: index.php');
     }else{
         $_SESSION['errores_entrada'] = $errores;
+
+        //Redirección mal
+        header('Location: crear-entradas.php');
     }
 }
 
 // Redirección
-header('Location: index.php');

@@ -5,7 +5,7 @@
             <h3>Bienvenido, <?= $_SESSION['usuario']['nombre'] . ' ' . $_SESSION['usuario']['apellidos']; ?></h3>
             
             <!-- Botones -->
-            <a href="crear-entradas.php" class="boton boton-verde">Crear entrada</a>
+            <a href="crear-entrada.php" class="boton boton-verde">Crear entrada</a>
             <a href="crear-categoria.php" class="boton">Crear categoría</a>
             <a href="cerrar.php" class="boton boton-naranja">Mis datos</a>
             <a href="cerrar.php" class="boton boton-rojo">Cerrar sesión</a>

@@ -52,7 +52,7 @@ if (isset($_POST)) {
 
     # PASSWORD
     #---------------------------------------------------#
-    if (!empty($email)) {
+    if (!empty($password)) {
         $password_validado = true;
     } else {
         $password_validado = false;

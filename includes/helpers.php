@@ -27,7 +27,6 @@ function borrarErrores(){
     }
 
     // Ojo aca, en el video le colocó un parámetro, pero no me funciona.
-
     if (isset($_SESSION['completado'])) {
         $_SESSION['completado'] = null;
         $borrado = true;
